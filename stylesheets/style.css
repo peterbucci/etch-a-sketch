@@ -1,0 +1,227 @@
+html, body {
+    width:100%;
+    height:100%;
+    font-family:sans-serif;
+    margin:0;
+    padding-top:10px;
+}
+
+* {
+        box-sizing:border-box;
+}
+
+#frame {
+    margin:0 auto;
+    background-color:#B72727;
+    height:85%;
+    width:0;
+    overflow:hidden;
+    border-radius:10px;
+    box-shadow:0px 0px 2px;
+    overflow:hidden;
+    background: -webkit-linear-gradient(left top, #B72727, #c55252); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right, #B72727, #c55252); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right, #B72727, #c55252); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom right, #B72727, #c55252); /* Standard syntax */
+}
+
+#wrapper {
+    height:70%;
+    width:70%;
+    background-color:#9ea2a3;
+    margin:auto;
+    border-bottom:solid 1px #000;
+    border-right:solid 1px #000;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:inset 0 0 20px;
+}
+
+#wrapper:after {
+    content:' ';
+    clear:both;
+    display:table;
+}
+
+.square-wrap {
+    float:left;
+    border-top:solid 1px #000;
+    border-left:solid 1px #000;
+    box-sizing:border-box;
+}
+
+.square {
+    background:#000;
+    opacity:0;
+    height:100%;
+    width:100%;
+}
+
+#frameHead {
+    position:relative;
+    width:100%;
+    height:15%;
+    text-align:center;
+    color:#EEB858;
+    font-weight:bold;
+    font-style: italic;
+    font-size:3vh;
+}
+
+#frameHead p {
+    position:absolute;
+    bottom:0;
+    width:100%;
+    margin:0;
+    text-shadow:1px 2px #000;
+}
+
+#frameHead p span {
+    font-family: 'Arizonia', cursive;
+    font-size:2em;
+}
+
+#frameFoot {
+    width:100%;
+    height:15%;
+}
+
+#frameFoot:after {
+    content:' ';
+    clear:both;
+    display:table;
+}
+
+#frameFoot .knobs {
+    width:15%;
+    height:100%;
+    float:left;
+}
+
+#frameFoot .knobs div {
+    width:100%;
+    height:100%;
+    background-color:#fff;
+    border-radius:100px;
+    box-shadow: -5px -5px 20px;
+    background: -webkit-radial-gradient(#888 1%, #bfbfbf 1%, #fff 9%); /* Safari 5.1-6.0 */
+    background: -o-radial-gradient(#888 1%, #bfbfbf 1%, #fff 9%); /* For Opera 11.6-12.0 */
+    background: -moz-radial-gradient(#888 1%, #bfbfbf 1%, #fff 9%); /* For Firefox 3.6-15 */
+    background: radial-gradient(#888 1%, #bfbfbf 1%, #fff 9%); /* Standard syntax */
+}
+
+#frameFoot .knobs .knobRight {
+    float:right;
+    box-shadow: -5px -5px 20px;
+}
+
+
+#frameFoot #space {
+    width:70%;
+    padding-top:5px;
+    text-align:center;
+    margin:auto;
+    float:left;
+}
+
+#controls {
+    position:absolute;
+    top:-100px;
+    left:50%;
+    padding:10px;
+    background-color:#000000;
+    opacity:.95;
+    border:solid 1px #000;
+}
+
+#currentSize {
+    margin:5px 0 2px 0;
+    font-family:sans-serif;
+    font-size:12px;
+    color:#fff;
+}
+
+#textForm #input{
+    margin-right:5px;
+    float:left;
+}
+
+#textForm button {
+    float:left;
+}
+
+#textForm #textFormFloat {
+    display:inline-block;
+    width:235px;
+}
+
+#error {
+    margin:0;
+    clear:both;
+    height:20px;
+    color:#ff0000;
+    font-weight:bold;
+}
+
+#colorPick {
+    margin:auto;   
+}
+
+#colorPick div {
+    width:18px;
+    height:18px;
+    display:inline-block;
+    margin-left:5px;
+}
+
+#colorPick #red {
+    border:solid 1px #000;
+    background-color:red;
+}
+
+#colorPick #blue {
+    border:solid 1px #000;
+    background-color:blue;
+}
+
+#colorPick #yellow {
+    border:solid 1px #000;
+    background-color:yellow;
+}
+
+#colorPick #green {
+    border:solid 1px #000;
+    background-color:green;
+}
+
+#colorPick .color:hover {
+    cursor:pointer;
+}
+
+#menu {
+    clear:both;
+    margin-bottom:0;
+    color:#fff;
+    text-align:center;
+}
+
+#menu:hover {
+    cursor:pointer;
+}
+
+#shakeP {
+    text-align:center;
+}
+
+#shakeP #shake {
+    background-color:#B72727;
+    border:solid 1px #000;
+    color:#EEB858;
+    font-weight:bold;
+    text-transform:uppercase;
+    padding:10px;
+}
+
+#shakeP #shake:hover {
+    cursor:pointer;
+}
